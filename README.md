@@ -24,14 +24,14 @@ I write these to show how I think about:
   - Always-on intervention was inherently disruptive (couldn’t “stay quiet”)
   - Decision: delay shipping; explore less intrusive / more natural modalities
 
-### 2) Sector-specific AI safety for minors (gold dataset + eval pipeline)
-**Why it matters:** Shows how to operationalise safety in a high-stakes environment (minors) using defensible evaluation, governance, and stakeholder-aware monitoring.
+### 2) Sector-specific AI safety (gold dataset + eval pipeline)
+**Why it matters:** Shows how to operationalise safety in a high-stakes environment using defensible evaluation, governance, and stakeholder-aware monitoring.
 
-- 📄 Read: `sector-specific-ai-safety-for-minors.md`
+- 📄 Read: `sector-specific-ai-safety.md`
 - Highlights:
   - Curated ~5,000 de-identified conversations and built a specialist-annotated **gold dataset**
   - Implemented **LLM-as-judge** evaluation with a second layer to reduce false positives
-  - Designed **teacher-in-the-loop monitoring** with severity-aware thresholds and block/replace for severe categories
+  - Designed **stakeholder-in-the-loop monitoring** with severity-aware thresholds and block/replace for severe categories
   - Guardrail installation and alerting are ongoing; focus is on building the measurement system to choose safer models
 
 ---
