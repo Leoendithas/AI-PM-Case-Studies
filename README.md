@@ -15,7 +15,7 @@ I write these to show how I think about:
 ## Case studies
 
 ### 1) Learning outcomes over adoption (no-ship / delay decision)
-**Why it matters:** Strong signal for big tech & government — demonstrates product judgement, evaluation discipline, and willingness to say “no” when impact isn’t proven.
+**Why it matters:** Many pilots look “successful” because users like them. This is a playbook for when “lots of interest” is not enough — learn how to test for real outcomes, spot hidden disruption costs, and make a confident no-ship call.
 
 - 📄 Read: `learning-outcomes-over-adoption.md`
 - 🔗 Prototype used for testing: https://github.com/Leoendithas/AIchat
@@ -24,12 +24,12 @@ I write these to show how I think about:
   - Always-on intervention was inherently disruptive (couldn’t “stay quiet”)
   - Decision: delay shipping; explore less intrusive / more natural modalities
 
-### 2) Sector-specific AI safety (gold dataset + eval pipeline)
-**Why it matters:** Shows how to operationalise safety in a high-stakes environment using defensible evaluation, governance, and stakeholder-aware monitoring.
+### 2) Sector-specific AI safety (ground-truth dataset + validation pipeline)
+**Why it matters:** Most “AI safety” guidance stays abstract. This case study shows how to operationalise it using defensible evaluation, governance, and stakeholder-aware monitoring.
 
 - 📄 Read: `sector-specific-ai-safety.md`
 - Highlights:
-  - Curated ~5,000 de-identified conversations and built an expert-annotated **gold dataset**
+  - Curated ~5,000 de-identified conversations and built an expert-annotated **ground-truth dataset**
   - Implemented **LLM-as-judge** evaluation with a second layer to reduce false positives
   - Designed **stakeholder-in-the-loop monitoring** with severity-aware thresholds and block/replace for severe categories
   - Guardrail installation and alerting are ongoing; focus is on building the measurement system to choose safer models
@@ -61,7 +61,7 @@ If you’re reviewing me for roles: I’m happy to share deeper details privatel
 ## About me
 I’m Lance — an AI Product Manager focused on **LLM productization**, especially:
 - evaluation & reliability in production
-- safety/guardrails (including minors)
+- safety/guardrails 
 - adoption and rollout in complex environments
 
 - GitHub: https://github.com/Leoendithas  
