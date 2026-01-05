@@ -29,7 +29,7 @@ I write these to show how I think about:
 
 - 📄 Read: `sector-specific-ai-safety.md`
 - Highlights:
-  - Curated ~5,000 de-identified conversations and built a specialist-annotated **gold dataset**
+  - Curated ~5,000 de-identified conversations and built an expert-annotated **gold dataset**
   - Implemented **LLM-as-judge** evaluation with a second layer to reduce false positives
   - Designed **stakeholder-in-the-loop monitoring** with severity-aware thresholds and block/replace for severe categories
   - Guardrail installation and alerting are ongoing; focus is on building the measurement system to choose safer models
