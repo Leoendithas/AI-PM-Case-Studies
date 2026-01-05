@@ -8,31 +8,32 @@ I write these to show how I think about:
 - **Adoption** (will people actually use it in their workflow?)
 - **Outcomes** (did it create measurable value?)
 
-> **Notes on privacy:** Org/platform names, internal prompts, and sensitive details are omitted. Metrics are aggregated or approximate where needed.
+> **Privacy note:** Org/platform names, internal prompts, and sensitive details are omitted. Metrics are aggregated or approximate where needed.
 
 ---
 
 ## Case studies
 
 ### 1) Learning outcomes over adoption (no-ship / delay decision)
-**Why it matters:** Many pilots look “successful” because users like them. This is a playbook for when “lots of interest” is not enough — learn how to test for real outcomes, spot hidden disruption costs, and make a confident no-ship call.
+**Why it matters:** Many pilots look “successful” because users like them. This shows what to do when “lots of interest” isn’t enough.  
+**You’ll take away:** an outcome-first evaluation pattern, common failure modes of always-on interventions, and a “pause vs ship” decision rubric.
 
-- 📄 Read: `learning-outcomes-over-adoption.md`
-- 🔗 Prototype used for testing: https://github.com/Leoendithas/AIchat
-- Highlights:
-  - High teacher interest did not translate to clear learning gains
-  - Always-on intervention was inherently disruptive (couldn’t “stay quiet”)
-  - Decision: delay shipping; explore less intrusive / more natural modalities
+- 📄 Read: `learning-outcomes-over-adoption.md`  
+- 🔗 Prototype used for testing: https://github.com/Leoendithas/AIchat  
+- **Key findings:**
+  - Strong interest, but no clear learning gains in student tests  
+  - The “must speak every ~5–6 messages” constraint made it inherently intrusive  
+  - Distraction/frustration showed up → pivoted to less intrusive modalities  
 
 ### 2) Sector-specific AI safety (ground-truth dataset + validation pipeline)
-**Why it matters:** Most “AI safety” guidance stays abstract. This case study shows how to operationalise it using defensible evaluation, governance, and stakeholder-aware monitoring.
+**Why it matters:** Most “AI safety” guidance stays abstract. This shows how to operationalise it for minors in a high-stakes setting.  
+**You’ll take away:** how to build a ground-truth dataset, run scalable validation, and design severity-aware monitoring that avoids alert fatigue.
 
-- 📄 Read: `sector-specific-ai-safety.md`
-- Highlights:
-  - Curated ~5,000 de-identified conversations and built an expert-annotated **ground-truth dataset**
-  - Implemented **LLM-as-judge** evaluation with a second layer to reduce false positives
-  - Designed **stakeholder-in-the-loop monitoring** with severity-aware thresholds and block/replace for severe categories
-  - Guardrail installation and alerting are ongoing; focus is on building the measurement system to choose safer models
+- 📄 Read: `sector-specific-ai-safety.md`  
+- **What I built:**
+  - ~5,000 de-identified conversations → expert-annotated ground-truth dataset  
+  - Validation pipeline: LLM-as-judge + second layer to reduce false positives  
+  - Teacher-in-the-loop monitoring design with severity thresholds + block/replace for severe cases  
 
 ---
 
@@ -54,14 +55,12 @@ Each case study follows a consistent structure:
 - Decision + rationale
 - What I learned + what I’d do next
 
-If you’re reviewing me for roles: I’m happy to share deeper details privately where appropriate.
-
 ---
 
 ## About me
 I’m Lance — an AI Product Manager focused on **LLM productization**, especially:
 - evaluation & reliability in production
-- safety/guardrails 
+- safety/guardrails
 - adoption and rollout in complex environments
 
 - GitHub: https://github.com/Leoendithas  
